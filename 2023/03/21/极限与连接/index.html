@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Hexo</title>
+        <meta name="author" content="John Doe" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+        <link rel="icon" href="/null" />
+        <script src="https://cdn.staticfile.org/vue/3.2.47/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.3.0/css/all.min.css" />
+<link rel="stylesheet" href="/css/fonts.min.css" />
+<script> const mixins = {}; </script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+
+<script src="https://cdn.staticfile.org/highlight.js/11.7.0/highlight.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.staticfile.org/highlight.js/11.7.0/styles/github.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
+
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" />
+
+    <meta name="generator" content="Hexo 5.4.2"></head>
+    <body>
+        <div id="layout">
+            <transition name="fade">
+            <div id="loading" v-show="loading">
+                <div id="loading-circle">
+                    <h2>LOADING</h2>
+                    <p>加载过慢请开启缓存&ensp;浏览器默认开启</p>
+                    <img src="/images/loading.gif" />
+                </div>
+            </div>
+            </transition>
+            <transition name="into">
+            <div id="main" v-show="!loading">
+                <nav id="menu" ref="menu">
+    <div class="desktop-menu">
+        <a class="title" href="/">
+            <span>HEXO</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;About</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
+        </a>
+        
+    </div>
+    <div id="mobile-menu">
+        <div class="curtain" v-show="showMenu" @click="showMenu = !showMenu"></div>
+        <div class="title" @click="showMenu = !showMenu">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;HEXO</span>
+        </div>
+        <transition name="slide">
+        <div class="items" v-show="showMenu">
+            
+            <a href="/">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-house fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                </div>
+            </a>
+            
+            <a href="/about">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-id-card fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                </div>
+            </a>
+            
+            <a href="/archives">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-box-archive fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                </div>
+            </a>
+            
+            <a href="/categories">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-bookmark fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                </div>
+            </a>
+            
+            <a href="/tags">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                </div>
+            </a>
+            
+        </div>
+        </transition>
+    </div>
+</nav>
+
+                <div class="article">
+    <div>
+        <h1></h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/3/21
+        </span>
+        
+        
+    </div>
+    
+    <div class="content" v-pre>
+        <h1 id="极限与连接"><a href="#极限与连接" class="headerlink" title="极限与连接"></a>极限与连接</h1><p>[TOC]</p>
+<h2 id="极限的概念"><a href="#极限的概念" class="headerlink" title="极限的概念"></a>极限的概念</h2><h3 id="数列的极限"><a href="#数列的极限" class="headerlink" title="数列的极限"></a>数列的极限</h3><h4 id="x–-gt-∞时函数f-x-的极限"><a href="#x–-gt-∞时函数f-x-的极限" class="headerlink" title="x–&gt;∞时函数f(x)的极限"></a>x–&gt;∞时函数f(x)的极限</h4><p><img src="image-20230304114417595.png" alt="image-20230304114417595"></p>
+<h4 id="x–-gt-x0时函数f-x-的极限"><a href="#x–-gt-x0时函数f-x-的极限" class="headerlink" title="x–&gt;x0时函数f(x)的极限"></a>x–&gt;x0时函数f(x)的极限</h4><p><img src="image-20230304115031798.png" alt="image-20230304115031798"></p>
+<h4 id="函数的左极限、右极限"><a href="#函数的左极限、右极限" class="headerlink" title="函数的左极限、右极限"></a>函数的左极限、右极限</h4><p><img src="image-20230304115221933.png" alt="image-20230304115221933"></p>
+<h4 id="例："><a href="#例：" class="headerlink" title="例："></a>例：</h4><p><img src="image-20230304115428886.png" alt="image-20230304115428886"></p>
+<p><img src="image-20230304115625598.png" alt="image-20230304115625598"></p>
+<p><img src="image-20230304115745957.png" alt="image-20230304115745957"></p>
+<h2 id="极限的性质与运算"><a href="#极限的性质与运算" class="headerlink" title="极限的性质与运算"></a>极限的性质与运算</h2><h3 id="极限的四则运算法则"><a href="#极限的四则运算法则" class="headerlink" title="极限的四则运算法则"></a>极限的四则运算法则</h3><p><img src="image-20230304121558039.png" alt="image-20230304121558039"></p>
+<h4 id="例：-1"><a href="#例：-1" class="headerlink" title="例："></a>例：</h4><p><img src="image-20230304121653643.png" alt="image-20230304121653643"></p>
+<h3 id="复合函数的极限"><a href="#复合函数的极限" class="headerlink" title="复合函数的极限"></a>复合函数的极限</h3><p><img src="image-20230304121922644.png" alt="image-20230304121922644"></p>
+<h3 id="基本未定式极限"><a href="#基本未定式极限" class="headerlink" title="基本未定式极限"></a>基本未定式极限</h3><p><img src="image-20230304122228040.png" alt="image-20230304122228040"></p>
+<h4 id="抓大放小（无穷比无穷的时候可以用）"><a href="#抓大放小（无穷比无穷的时候可以用）" class="headerlink" title="抓大放小（无穷比无穷的时候可以用）"></a><strong>抓大放小（无穷比无穷的时候可以用）</strong></h4><p><img src="image-20230304122428052.png" alt="image-20230304122428052"></p>
+<p><img src="image-20230304122611076.png" alt="image-20230304122611076"></p>
+<p><img src="image-20230304144745301.png" alt="image-20230304144745301"></p>
+<h3 id="例：-2"><a href="#例：-2" class="headerlink" title="例："></a>例：<img src="image-20230304122752220.png" alt="image-20230304122752220"></h3><p><img src="image-20230304145258870.png" alt="image-20230304145258870"></p>
+<p><img src="image-20230304145643052.png" alt="image-20230304145643052"></p>
+<h2 id="无穷小量与无穷大量"><a href="#无穷小量与无穷大量" class="headerlink" title="无穷小量与无穷大量"></a>无穷小量与无穷大量</h2><h3 id="无穷小量"><a href="#无穷小量" class="headerlink" title="无穷小量"></a>无穷小量</h3><p><img src="image-20230304143116704.png" alt="image-20230304143116704"></p>
+<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p><img src="image-20230304143230796.png" alt="image-20230304143230796"></p>
+<h4 id="无穷小的性质："><a href="#无穷小的性质：" class="headerlink" title="无穷小的性质："></a>无穷小的性质：</h4><p><img src="image-20230304143411636.png" alt="image-20230304143411636"></p>
+<h3 id="无穷大量："><a href="#无穷大量：" class="headerlink" title="无穷大量："></a>无穷大量：</h3><p><img src="image-20230304143520942.png" alt="image-20230304143520942"></p>
+<p><img src="image-20230304143556571.png" alt="image-20230304143556571"></p>
+<h4 id="例：-3"><a href="#例：-3" class="headerlink" title="例："></a>例：<img src="image-20230304143750267.png" alt="image-20230304143750267"></h4><h2 id="例题："><a href="#例题：" class="headerlink" title="例题："></a>例题：</h2><p><img src="image-20230304144426412.png" alt="image-20230304144426412"></p>
+<h2 id="两个重要极限"><a href="#两个重要极限" class="headerlink" title="两个重要极限"></a>两个重要极限</h2><p><img src="image-20230304145842220.png" alt="image-20230304145842220"></p>
+<p><img src="image-20230304150242669.png" alt="image-20230304150242669"></p>
+<p><img src="image-20230304150819283.png" alt="image-20230304150819283"></p>
+<p><img src="image-20230304151957834.png" alt="image-20230304151957834"></p>
+<h2 id="夹逼准则"><a href="#夹逼准则" class="headerlink" title="夹逼准则"></a>夹逼准则</h2><p><img src="image-20230304152216411.png" alt="image-20230304152216411"></p>
+<p><img src="image-20230304152512092.png" alt="image-20230304152512092"></p>
+<p><img src="image-20230304152811435.png" alt="image-20230304152811435"></p>
+<h2 id="函数的连续性"><a href="#函数的连续性" class="headerlink" title="函数的连续性"></a>函数的连续性</h2><h3 id="连续的定义"><a href="#连续的定义" class="headerlink" title="连续的定义"></a>连续的定义</h3><p><img src="image-20230304153029443.png" alt="image-20230304153029443"></p>
+<p><img src="image-20230304153155090.png" alt="image-20230304153155090"></p>
+<h4 id="例：-4"><a href="#例：-4" class="headerlink" title="例："></a>例：</h4><p><img src="image-20230304153412171.png" alt="image-20230304153412171"></p>
+<p><img src="image-20230304153554130.png" alt="image-20230304153554130"></p>
+<h4 id="函数的间断点"><a href="#函数的间断点" class="headerlink" title="函数的间断点"></a>函数的间断点</h4><p><img src="image-20230304153735983.png" alt="image-20230304153735983"></p>
+<h4 id="例：-5"><a href="#例：-5" class="headerlink" title="例："></a>例：</h4><p><img src="image-20230304154133633.png" alt="image-20230304154133633"></p>
+<h2 id="极限在经济生活中的应用"><a href="#极限在经济生活中的应用" class="headerlink" title="极限在经济生活中的应用"></a>极限在经济生活中的应用</h2><h1 id="函数与反函数"><a href="#函数与反函数" class="headerlink" title="函数与反函数"></a>函数与反函数</h1><h2 id="反函数"><a href="#反函数" class="headerlink" title="反函数"></a>反函数</h2><p><img src="image-20230304115923022.png" alt="image-20230304115923022"></p>
+<h3 id="反函数的性质"><a href="#反函数的性质" class="headerlink" title="反函数的性质"></a>反函数的性质</h3><p><img src="image-20230304120041189.png" alt="image-20230304120041189"></p>
+<p><img src="image-20230304120135221.png" alt="image-20230304120135221"></p>
+<h1 id="初等函数"><a href="#初等函数" class="headerlink" title="初等函数"></a>初等函数</h1><p><img src="image-20230304120224005.png" alt="image-20230304120224005"></p>
+<p><img src="image-20230304120336742.png" alt="image-20230304120336742"></p>
+<p><img src="image-20230304120524591.png" alt="image-20230304120524591"></p>
+<p><img src="image-20230304120600348.png" alt="image-20230304120600348"></p>
+<h2 id="反三角函数"><a href="#反三角函数" class="headerlink" title="反三角函数"></a>反三角函数</h2><p><img src="image-20230304120718965.png" alt="image-20230304120718965"></p>
+<p><img src="image-20230304120928669.png" alt="image-20230304120928669"></p>
+<p><img src="image-20230304121015627.png" alt="image-20230304121015627"></p>
+<p><img src="image-20230304121047857.png" alt="image-20230304121047857"></p>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+                <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2022 - 2023 Hexo
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;John Doe
+        </div>
+        <div>
+            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
+            <a target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
+        
+    </div>
+</footer>
+
+            </div>
+            </transition>
+            
+            <transition name="fade">
+            <div id="preview" ref="preview" v-show="previewShow">
+                <img id="preview-content" ref="previewContent" />
+            </div>
+            </transition>
+            
+        </div>
+        <script src="/js/main.js"></script>
+        
+        
+
+
+
+
+        
+    </body>
+</html>
